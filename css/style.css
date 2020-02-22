@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto/Roboto.woff2') format('woff2'), url('fonts/roboto/Roboto.woff') format('woff'), url('fonts/roboto/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    width: calc(100% - 20px);
+    border-left: 1px solid #3399cc;
+    border-right: 1px solid #3399cc;
+}
+
+h2 {
+    font-size: 2em;
+    background-color: #3399cc;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 8px;
+}
+
+p {
+    font-size: 1.6em;
+    margin: 5px;
+}
+
+input {
+    font-size: 1em;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+label.connection {
+    text-align: left;
+}
+
+label > input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 2px;
+    text-align: center;
+    outline: 0;
+}
+
+label > input.node {
+    width: 20%;
+    margin: 5px;
+}
+
+#condition p {
+    text-align: justify;
+}
+
+#det {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 6px;
+    text-align: center;
+}
+
+.cell {
+    display: inline-block;
+    font-size: 1.6em;
+    text-align: center;
+    border: 1px solid #3399cc;
+    box-sizing: border-box;
+}
+
+.chart { width: 100%; overflow-x: auto; }
+
+.node-name {
+    font-weight: bold
+}
+
+.nodeStyling {
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    min-width: 50px;
+    text-align: center;
+}
+
+.gray {
+    background-color: #909090;
+}
+
+.light-gray {
+    background-color: #D3D3C7;
+}
+
+.blue {
+    background-color: #A2BDFD;
+}
+
+#output {
+    border-bottom: 1px solid #3399cc;
+}
+
+#output p {
+    margin-top: 10px;
+    text-align: center;
+}

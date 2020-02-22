@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Лабораторная работа №3 - Смена четных вершин в бинарном дереве</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="lib/treant/treant.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="lib/jquery/jquery-2.2.4.min.js"></script>
+        <script src="lib/raphael/raphael.js"></script>
+        <script src="lib/treant/treant.js"></script>
+        <script type="text/javascript" src="js/binaryTree.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="condition">
+                <h2>Условие задачи</h2>
+                <p>Дано бинарное дерево. Каждую вершину с чётным номером поменять местами с сыном, имеющим чётный номер.</p>
+            </div>
+            <div id="input">
+                <h2>Входные параметры</h2>
+                <p><label>Число связей: <input id="countNodes" type="number" placeholder="Число связей в бинарном дереве"></label></p>
+                <div id="binaryTree"></div>
+            </div>
+            <div id="output">
+                <h2>Выходные параметры</h2>
+                <p id="tree_input">Заполните входные параметры</p>
+                <div class="chart" id="chart_input"></div>
+                <div id="steps"></div>
+            </div>
+        </div>
+    </body>
+</html>
